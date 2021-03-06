@@ -1,7 +1,7 @@
-# Coffee Hub Website
-Website project for Coffee Hub.
+# Splash Website
+Test project for Splash.
 
-![Coffee Hub](screenshot.jpg)
+![Splash](screenshot.jpg)
 
 ## Built With
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
@@ -11,10 +11,11 @@ Website project for Coffee Hub.
 ## Requirements
  - NPM
  - Gulp.js
+ - Rellax.js
 
 ## Install
 ```
-    $ git clone git@github.com:samiiexx/coffee-hub.git main
+    $ git clone git@github.com:samiiexx/splash.git main
     $ cd main
     $ npm install
 ```
