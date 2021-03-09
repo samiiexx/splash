@@ -9,30 +9,80 @@
         ></script>
         <link rel="shortcut icon" href="images/logo.png" type="image/png" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Splash</title>
+        <title>Parallax Scrolling</title>
     </head>
     <body>
         <header class="header">
-            <div class="container">
-                <div class="blobs">
-                    <div
-                        class="blob-ball ball-one rellax"
-                        data-rellax-speed="3"
-                    ></div>
-                    <div
-                        class="blob-ball ball-two rellax"
-                        data-rellax-speed="5"
-                    ></div>
-                    <div
-                        class="blob-ball ball-three rellax"
-                        data-rellax-speed="7"
-                    ></div>
-                </div>
+            <div class="container zoom">
+                <h1
+                    class="h1 main-title text-center rellax"
+                    data-rellax-speed="-2"
+                >
+                    Freedom
+                </h1>
+
+                <img
+                    src="images/person.png"
+                    alt=""
+                    class="person rellax"
+                    data-rellax-speed="1"
+                />
+                <img
+                    src="images/mountain-1.png"
+                    alt=""
+                    class="mountain1 rellax"
+                    data-rellax-speed="2"
+                />
+                <img
+                    src="images/mountain-2.png"
+                    alt=""
+                    class="mountain2 rellax"
+                    data-rellax-speed="-3"
+                />
+                <img
+                    src="images/mountain-3.png"
+                    alt=""
+                    class="mountain3 rellax"
+                    data-rellax-speed="-4"
+                />
+                <img
+                    src="images/sky.png"
+                    alt=""
+                    class="sky rellax"
+                    data-rellax-speed="-2"
+                />
             </div>
         </header>
 
-        <section class="about-us py-5">
-            <div class="container"></div>
+        <section class="section">
+            <div class="shadow"></div>
+            <div class="container section-flex">
+                <div
+                    class="content contained-text rellax"
+                    data-rellax-speed="2"
+                >
+                    <h2 class="h2 about-title py-1">
+                        About
+                        <div class="border"></div>
+                    </h2>
+                    <p class="p pt-1">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. At vitae assumenda aspernatur sunt illo enim
+                        repudiandae nisi dignissimos quidem asperiores, itaque,
+                        expedita sit obcaecati animi tenetur eius modi rerum
+                        libero.
+                    </p>
+                </div>
+
+                <div class="img-container">
+                    <img
+                        src="images/image.jpg"
+                        alt=""
+                        class="about-img rellax"
+                        data-rellax-speed="1"
+                    />
+                </div>
+            </div>
         </section>
 
         <script

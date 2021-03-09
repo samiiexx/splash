@@ -7,8 +7,39 @@
 // // });
 
 // //Parallax scrolling
-let rellax = new Rellax(".rellax");
+var rellax = new Rellax(".rellax", {
+    horizontal: true,
+});
 
+const main_title = document.querySelector(".main-title");
+const header = document.querySelector("header");
+const shadow = document.querySelector(".shadow");
+
+let header_height = header.offsetHeight;
+
+window.addEventListener("scroll", () => {
+    let scroll = window.pageYOffset;
+
+    main_title.style.opacity = -scroll / (header_height / 2) + 1;
+
+    shadow.style.height = `${scroll * 0.5 + 300}px`;
+});
+
+// $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     $(".mountain2").css({
+//         width: 10 + scroll / 25 + "%",
+//         left: scroll / 50 + "%",
+//     });
+
+//     $(".mountain1").css({
+//         width: 100 + scroll / 25 + "%",
+//     });
+
+//     $(".main-title").css({
+//         top: -100 + scroll / 20 + "%",
+//     });
+// });
 // // JQuery Scripts
 // $(document).ready(function () {
 //     // Footer year
